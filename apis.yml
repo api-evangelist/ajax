@@ -1,7 +1,30 @@
 aid: ajax
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ajax.png
 name: Ajax
-description: Ajax is a company surfaced as a portfolio company of bloomberg-beta and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Ajax is an AI-powered timekeeping platform built specifically for law firms.
+  It automatically captures attorney work across applications, documents, emails,
+  phone calls, and video meetings, then generates OCG-compliant, voice-matched
+  time-entry narratives and syncs them with one click to practice-management and
+  billing systems. Ajax integrates with SurePoint, Clio, MyCase, Filevine,
+  PracticePanther, Centerbase, Actionstep, and Soluno, and positions itself
+  around recovering otherwise-lost billable hours. The company is SOC 2 aligned,
+  encrypts data in transit and at rest, does not train models on customer data,
+  and enforces rolling data deletion. Ajax is a Bloomberg Beta portfolio company.
+  As of this enrichment pass it exposes no public developer API, SDKs, or
+  documentation surface — it is a product/SaaS company profile rather than an API
+  provider.
 url: https://raw.githubusercontent.com/api-evangelist/ajax/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +37,14 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Legal
+- Legal Tech
+- Timekeeping
+- Billing
+- Law Firms
+- AI
+- Productivity
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +54,20 @@ maintainers:
 common:
 - type: Website
   url: https://www.joinajax.com/
+- type: Blog
+  url: https://www.joinajax.com/blog
+- type: Login
+  url: https://www.joinajax.com/login
+- type: PrivacyPolicy
+  url: https://www.joinajax.com/legal/privacy-policy
+- type: TermsOfService
+  url: https://www.joinajax.com/legal/terms-of-use
+- type: Compliance
+  url: https://www.joinajax.com/legal/data-processing
+- type: DomainSecurity
+  url: security/ajax-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
